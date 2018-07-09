@@ -43,7 +43,7 @@ export class VideoComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     const constraints = {
-      video: false,
+      video: true,
       audio: true,
     };
 
@@ -71,14 +71,9 @@ export class VideoComponent implements OnInit, AfterViewInit {
         this.start(false);
       }
       this.rtcPeerConnection.setRemoteDescription(new RTCSessionDescription(data.sdp));
-      if (confirm(this.selectedUser.username + 'is calling')) {
         this.rtcPeerConnection.createAnswer()
           .then(desc => this.setLocalAndAnswer(desc))
           .catch(e => console.log(e));
-      } else {
-        this.isHangUp = true;
-        this.closeVideoCall();
-      }
     });
 
     this.socketService.receiveAnswerResponse().subscribe((data: any) => {
