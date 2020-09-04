@@ -41,7 +41,7 @@
     "jsonwebtoken": "^8.3.0",
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.10",
-    "mongodb": "^2.2.19",
+    "mongodb": "^3.1.13",
     "ng-emoji-picker": "^6.0.0",
     "rxjs": "^6.0.0",
     "socket.io": "^2.1.1",
