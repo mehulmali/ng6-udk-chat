@@ -40,7 +40,7 @@
     "font-awesome": "^4.7.0",
     "jsonwebtoken": "^8.3.0",
     "jwt-decode": "^2.2.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "mongodb": "^2.2.19",
     "ng-emoji-picker": "^6.0.0",
     "rxjs": "^6.0.0",
